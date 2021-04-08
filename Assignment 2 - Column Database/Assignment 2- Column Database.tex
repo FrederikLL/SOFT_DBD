@@ -1,7 +1,8 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage{biblatex}
 \usepackage{listings}
-
+\usepackage{graphicx}
+\graphicspath{ {./} }
 \title{Assignment 2 - Databases}
 \date{2021\\April}
 \author{Frederik Lassen}
@@ -83,7 +84,27 @@ Swap with one of your fellow students, and decompress each other’s message.
 \section{(A)Task 3 - Huffman coding}
 
 \begin{enumerate}
-\item answers
+\item 
+\includegraphics[scale=0.6]{hufftree}
+\item There are:
+\begin{lstlisting}
+e = 01, ! = 000 ,r = 001 , _ = 101, b =1001, i = 1000, 
+p = 1100, a = 1101, s = 1111, t = 11100, h = 11101
+So compressed it uses 145 bits.
+As a raw Ascii string it uses 352 bits.
+\end{lstlisting}
+
+\item 
+\begin{lstlisting}
+pete is here = 
+1100 | 01 | 11100 | 01 | 101 | 1000 |
+1111 | 101 | 11101 | 01 | 001 | 01
+
+Compressed 39 bits
+Raw ASCII 96 bits
+\end{lstlisting}
+
+
 \end{enumerate}
 
 \clearpage
